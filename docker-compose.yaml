@@ -10,7 +10,7 @@ services:
   mysql:
     image: mysql:8.0
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - $PWD/mysql/init/:/docker-entrypoint-initdb.d/
       - $PWD/mysql/data:/var/lib/mysql/
